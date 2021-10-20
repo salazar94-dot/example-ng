@@ -28,5 +28,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}        
-        folder: project/dist/angular-github-actions
+        folder: project/dist
         branch: gh-pages        
