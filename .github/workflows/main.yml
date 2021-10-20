@@ -21,7 +21,7 @@ jobs:
       run: cd project && npm install
 
     - name: Build
-      run: npm run build:prod
+      run: cd project &&  npm run build:prod
 
     - name: Deploy
       if: success()
