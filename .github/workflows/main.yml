@@ -24,8 +24,7 @@ jobs:
       run: cd project &&  npm run build:prod
 
     - name: Deploy
-      if: success()
-      mkdir -p subdir1/subdir2
+      if: success()      
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}        
